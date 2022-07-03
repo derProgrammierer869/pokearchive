@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1><center>PokéArchive</center></h1>
+    <body>
+        <div><center>
+            <p style="border: black solid 2px; height: fit-content; text-align: center; background-color: yellow; width: 500px; padding: 8px; margin-top: 80px;">
+                This page is being regularly being updated over time. If there is any information you would like to submit, you can do so via email in the Contact tab above.
+            </p>
+        </center></div>
+        <p>
+            <center>This page is dedicated to documenting and archiving anything related to the third generation of Pokemon.
+                 This includes the games, special events for the games, the trading card game, and anything else important relating to these games. There is a lot of obscure and Japan exclusive content and merchandise out there, and the goal is to have documentation for it all in one place.</center>
+        </p>
+        <ul>
+            <center>
+                <!--<a href="{{ url_for('cards')}}">Main Cards </a>-->
+                <a href="{{ url_for('games')}}">Games </a>
+                <a href="{{ url_for('blog')}}">Blog Page </a>
+            </center>
+        </ul>
+    </body>
+{% endblock %}

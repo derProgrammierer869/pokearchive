@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h1><center>Cards Page</center></h1>
+    <body>
+        <p>
+            <left>There several expansion sets and special sets within the third generation of the Pokemon TCG. Below you will find links to more specific sections.</left> 
+        </p>
+        <div class="sidenav">
+            <center>
+                <a href="{{ url_for('expansionsets')}}">Expansion Sets</a>
+                <a href="{{ url_for('specialcards')}}">Special Cards</a>
+                <a href="{{ url_for('japancards')}}">Japan Exclusive Cards</a>
+                <a href="{{ url_for('exlist')}}">ex Card List</a>
+                <a href="{{ url_for('goldstar')}}">Gold Star Cards</a>
+                <a href="{{ url_for('deltaspecies')}}">Delta Species Cards</a>
+            </center>
+        </div> 
+    </body>
+{% endblock %}
