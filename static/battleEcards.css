@@ -1,0 +1,80 @@
+p.feature-box.heading {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+div.feature-box.borders{
+    border: 2px;
+    border-style: solid;
+    width: auto;
+    height: auto;
+    background-color: lightgrey;
+    border-radius: 25px;
+    padding: 8px;  
+}
+
+aside {
+    float: right;
+    border:2px;
+    border-style: solid;
+    border-color: black;     
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+p.feature-box.pack1 {
+    float: right;
+    border: 2px;
+    border-style: solid;
+    width: 263px;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 8px;
+    margin-left: 30px;
+}
+
+aside.trainercard {
+    align-self: left;
+}
+
+header.feature-box.heading {
+    border-bottom: 2px solid black;
+    padding: 8px;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+header.feature-box.subheading {
+    font-size: 18px;
+    color: white;
+}
+
+aside.tower {
+    width: 380x;
+}
+
+aside.star {
+    width: 380px;
+}
+
+aside.crown {
+    width: 380px;
+    margin-bottom: 35px;
+}
+
+p.berrycard {
+    float: right;
+    border: 2px;
+    border-style: solid;
+    width: 351px;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 8px;
+}
