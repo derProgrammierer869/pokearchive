@@ -1,2 +1,0 @@
-# pokearchive
-Pokearchive website
