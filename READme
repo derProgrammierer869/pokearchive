@@ -1,0 +1,4 @@
+This is a website that I am building for fun and to gain web development skills. Its build using Bootstrap and Flask, and is currently put into a Docker container
+and hosted on Google Cloud: https://pokearchivewebsite-wnr4ea55ua-uk.a.run.app/RSE
+
+I will be updating the website as time goes on, so if some pages look a bit empty that is the reason. 
