@@ -1,0 +1,671 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1><center><img src="{{ url_for('static', filename='set banners/deoxys.png')}}" alt="deoxyslogo" height="132" width="573"></center></h1>
+<body>
+</p>
+<style>
+    table, td {
+      border:2px solid black; color: black; text-align: center; background-color: white;
+    }
+    th{background-color: crimson} 
+    th{border:2px solid black; color: black; text-align: center;background-color: orangered}
+
+    </style>
+<table style="width: fit-content;" align="center">
+    <tr>
+        <th>Card</th>
+        <th>Card #</th>
+        <th>Type</th>
+        <th>Rarity</th>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Altaria</a></td>
+        <td>1/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Beautifly</a></td>
+        <td>2/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Breloom</a></td>
+        <td>3/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Camerupt</a></td>
+        <td>4/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fire.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Claydol</a></td>
+        <td>5/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Crawdaunt</a></td>
+        <td>6/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/darkness.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Dusclops</a></td>
+        <td>7/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Gyarados</a></td>
+        <td>8/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Jirachi</a></td>
+        <td>9/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/metal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Ludicolo</a></td>
+        <td>10/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Metagross</a></td>
+        <td>11/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Mightyena</a></td>
+        <td>12/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/darkness.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Ninjask</a></td>
+        <td>13/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Shedinja</a></td>
+        <td>14/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Slaking</a></td>
+        <td>15/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Deoxys</a></td>
+        <td>16/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Deoxys</a></td>
+        <td>17/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Deoxys</a></td>
+        <td>18/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Ludicolo</a></td>
+        <td>19/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Magcargo</a></td>
+        <td>20/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fire.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Pelipper</a></td>
+        <td>21/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Rayquaza</a></td>
+        <td>22/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Sableye</a></td>
+        <td>23/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/darkness.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Seaking</a></td>
+        <td>24/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Shiftry</a></td>
+        <td>25/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Skarmory</a></td>
+        <td>26/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/metal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Tropius</a></td>
+        <td>27/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Whiscash</a></td>
+        <td>28/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Xatu</a></td>
+        <td>29/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Donphan</a></td>
+        <td>30/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Golbat</a></td>
+        <td>31/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Grumpig</a></td>
+        <td>32/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Lombre</a></td>
+        <td>33/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Lombre</a></td>
+        <td>34/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Lotad</a></td>
+        <td>35/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Lunatone</a></td>
+        <td>36/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Magcargo</a></td>
+        <td>37/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fire.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Manectric</a></td>
+        <td>38/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/lightning.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Masquerain</a></td>
+        <td>39/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Metang</a></td>
+        <td>40/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Minun</a></td>
+        <td>41/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/lightning.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Nosepass</a></td>
+        <td>42/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Nuzleaf</a></td>
+        <td>43/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Plusle</a></td>
+        <td>44/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/lightning.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Shelgon</a></td>
+        <td>45/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>            
+        <td><a href="{{ url_for('rubysapphire')}}">Silicoon</a></td>
+        <td>46/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Solrock</a></td>
+        <td>47/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>            
+        <td><a href="{{ url_for('rubysapphire')}}">Starmie</a></td>
+        <td>48/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Swellow</a></td>
+        <td>49/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Vigoroth</a></td>
+        <td>50/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Weezing</a></td>
+        <td>51/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Bagon</a></td>
+        <td>52/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Baltoy</a></td>
+        <td>53/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Barboach</a></td>
+        <td>54/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Beldum</a></td>
+        <td>55/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Carvanha</a></td>
+        <td>56/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/darkness.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Corphish</a></td>
+        <td>57/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Duskull</a></td>
+        <td>58/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Electrike</a></td>
+        <td>59/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/lightning.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Electrike</a></td>
+        <td>60/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/lightning.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Goldeen</a></td>
+        <td>61/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Koffing</a></td>
+        <td>62/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Lotad</a></td>
+        <td>63/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Magikarp</a></td>
+        <td>64/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Makuhita</a></td>
+        <td>65/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>                        
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Natu</a></td>
+        <td>66/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Nincada</a></td>
+        <td>67/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Numel</a></td>
+        <td>68/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fire.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Phanpy</a></td>
+        <td>69/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Poochyena</a></td>
+        <td>70/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/darkness.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Seedot</a></td>
+        <td>71/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Shroomish</a></td>
+        <td>72/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Slakoth</a></td>
+        <td>73/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Slugma</a></td>
+        <td>74/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fire.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Slugma</a></td>
+        <td>75/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fire.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>            
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Spoink</a></td>
+        <td>76/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Staryu</a></td>
+        <td>77/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Surskit</a></td>
+        <td>78/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Swablu</a></td>
+        <td>79/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Taillow</a></td>
+        <td>80/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Wingull</a></td>
+        <td>81/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/water.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Wurmple</a></td>
+        <td>82/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Zubat</a></td>
+        <td>83/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Balloon Berry</a></td>
+        <td>84/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Crystal Shard</a></td>
+        <td>85/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Energy Charge</a></td>
+        <td>86/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Lady Outing</a></td>
+        <td>87/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Master Ball</a></td>
+        <td>88/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Meteor Falls</a></td>
+        <td>89/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Professor Cozmo's Discovery</a></td>
+        <td>90/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Space Center</a></td>
+        <td>91/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Strength Charm</a></td>
+        <td>92/108</td>
+        <td>Trainer</td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Boost Energy</a></td>
+        <td>93/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Heal Energy</a></td>
+        <td>94/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Scramble Energy</a></td>
+        <td>95/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Crowbat ex</a></td>
+        <td>96/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/grass.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Deoxys Ex</a></td>
+        <td>97/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Deoxys ex</a></td>
+        <td>98/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Deoxys ex</a></td>
+        <td>99/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/psychic.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Hariyama ex</a></td>
+        <td>100/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/fighting.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+    </tr>
+    <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Manectric ex</a></td>
+        <td>101/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/lightning.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Rayquaza ex</a></td>
+        <td>102/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Salamence ex</a></td>
+        <td>103/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Sharpedo ex</a></td>
+        <td>104/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/darkness.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Latias<img src="{{ url_for('static', filename='gold star cards/Pokemon_Star.png')}}" alt="Gold Star" width="33" height="21.5"/></a></td>
+        <td>105/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Latios<img src="{{ url_for('static', filename='gold star cards/Pokemon_Star.png')}}" alt="Gold Star" width="33" height="21.5"/></a></td>
+        <td>106/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Rayquaza<img src="{{ url_for('static', filename='gold star cards/Pokemon_Star.png')}}" alt="Gold Star" width="33" height="21.5"/></a></td>
+        <td>107/108</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/normal.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>
+      <tr>
+        <td><a href="{{ url_for('rubysapphire')}}">Rocket's Raikou ex</a></td>
+        <td>108/107</td>
+        <td><img src="{{ url_for('static', filename='energy symbols/darkness.webp')}}" alt='card' height="18" width="18"></td>
+        <td><img src="{{ url_for('static', filename='rarity/holorare.webp')}}" alt="rarity" height="12" width="22">	</td>
+      </tr>  
+</table>          
+</body>
+{% endblock %}

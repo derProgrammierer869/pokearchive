@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+{% block content %}
+<html>  
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='battleEcards.css')}}">
+    </head>
+    
+    <h1 style="text-decoration: underline;"><center>Battle e Cards</center></h1>
+    <body>
+        <p class="feature-box heading">
+            This section will be dedicated to the e-Reader cards for the generation 3 games. These cards were used to unlock special battles and events in the games, and were available in packs, as well as being packaged with some of the games.
+                    These cards were specifically named Battle e cards, not to be confused with the TCG e-Reader cards. 5 sets were released in total, but due to the e-Reader being discontinued, the US, Canada and Australia only recieved the first set.
+                    None of these sets were released in Europe as the e-Reader was not available to that market. 
+        </p>
+
+    <div class="feature-box borders">
+        <header class="feature-box heading">
+            <left>
+                Series 1  
+            </left>
+        </header>
+
+        <p style = 'margin-right: 660px;'>
+            <p class='feature-box pack1' style="align-items: right;"><img src="{{ url_for('static', filename='battleEcards/Freezing_Ray_Battle_e_English.png')}}" alt="Series 1 battle e card pack" width="244" height="452"/>Ruby & Sapphire Series 1 Battle e card booster pack</p>
+            This was the first set realesed (Japan: June 27, 2003 -> North America: October 21, 2003 -> Australia: October 31, 2003) as part of the Battle e series. These cards were used to unlock special battles
+            and berries in Ruby and Sapphire. 48 battle cards were included in this set, as well as 6 berry cards and 6 battle record cards. Only one card could be used at a time, using another card while another card's 
+            data was stored on the game would overwrite the previous card's data.<br><br> This set was only compatible with Ruby and Sapphire, not with LeafGreen, FireRed or Emerald versions. This was also the only set to be 
+            released outside of Japan, and cards were also packaged with copies of Ruby and Sapphire.    
+            <aside>
+                NOTE: The English Battle e cards <br> use the regular e-Reader, <br>while all of the Japanese Battle e <br> cards use the e-Reader+
+            </aside>
+        </p>
+        <header class="feature-box subheading">
+            Trainer cards:
+        </header>     
+        <p>
+            Trainer cards would let players send special trainer data to Ruby and Sapphire. The game is only able to store data for one trainer at a time. The player can face the imported trainer in the basement
+            of the old man's house in Mosdeep City, and some trainers can be faced in the Battle Tower as well. 
+            <br><br>
+            These cards show the trainers team with some of the content such as held items, or a Pokémon from the trainers party to be blurred out. The trainers have 3 Pokémon on their teams at varying levels, 
+            and the cards are colored differently based on their difficulty; green, bronze, silver, and gold. Every pack of Battle e cards contains a gold card, which has a trainer with a team of level 100 Pokémon. These are called "Target Trainers". <br><br><br><br>
+            There are 3 circles shown at the top of the card with some info about the trainer:
+        </p> 
+        <aside class="tower">
+            <img src="{{ url_for('static', filename='battleEcards/BattleETower35x32.png')}}" alt="Battle Tower" width="35" height="32" class="tower"/>This symbol indicates
+            that the trainer from <br>the Battle e card can be found in the Battle Tower.
+        </aside>
+        <aside class="star">             
+            <img src="{{ url_for('static', filename='battleEcards/BattleEStar33x34.png')}}" alt="Battle Star" width="33" height="34" class="star"/>This symbol indicates
+            that the trainer will <br>have a rare Pokémon, or a Pokémon not from Hoenn.
+        </aside>  
+        <aside class="crown">
+            <img src="{{ url_for('static', filename='battleEcards/BattleECrown34x29.png')}}" alt="Series 1 battle e card pack" width="34" height="29" class="crown"/>This symbol indicates
+            that the trainer will <br>have Pokémon in their party that are all at level 100.
+        </aside> 
+        <aside class="trainercard">
+            <img src="{{ url_for('static', filename='/battleEcards/Dragon_Tamer_Craig_Battle_e694x504.jpeg')}}" alt="trainer card" width="347" height="252"/>
+        </aside>
+        <header class="feature-box subheading">
+            <br>Berry cards:
+        </header> 
+        <p style = 'margin-right: 660px;'>
+            <p class='berrycard' style="align-items: right;"><img src="{{ url_for('static', filename='battleEcards/Topo_Berry_Battle_e800x570.jpeg')}}" alt="Series 1 battle e card pack" width="333.3" height="237.5"/>Topo Berry Battle e card</p>
+            The berry cards are used to send berry data to Ruby and Sapphire. 
+        </p>
+            
+         
+</div>                
+    </body>
+
+</html>
+{% endblock %}
+
+            <!--<p class='feature-box pack2' style="align-items: right;"><img src="{{ url_for('static', filename='battleEcards/LGFRBEpack311x600.png')}}" alt="LeafGreen FireRed battle e card pack" width="311" height="600"/>Japanese FireRed & Leafgreen Battle e card booster pack</p>-->
